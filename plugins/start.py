@@ -84,7 +84,7 @@ async def start_command(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton("⚡️ ᴀʙᴏᴜᴛ", callback_data = "about"),
-                    InlineKeyboardButton('🍁 ᴄʀᴇᴀᴛᴏʀ', url='https://t.me/Rimuru_AS')
+                    InlineKeyboardButton('🍁 ᴘʀᴇᴍɪᴜᴍ', url='https://t.me/@ITS_RITIK_VEARMA')
                 ]
             ]
                 )
@@ -100,11 +100,9 @@ async def start_command(client: Client, message: Message):
             disable_web_page_preview = True,
             quote = True
         )
-        return  
+        return   
 
 
-
-    
 #=====================================================================================##
 
 WAIT_MSG = """"<b>Processing ....</b>"""
@@ -199,4 +197,4 @@ Unsuccessful: <code>{unsuccessful}</code></b>"""
         msg = await message.reply(REPLY_ERROR)
         await asyncio.sleep(8)
         await msg.delete()
-
+    
