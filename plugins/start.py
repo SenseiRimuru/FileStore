@@ -102,15 +102,9 @@ async def start_command(client: Client, message: Message):
         )
         return  
 
-@Bot.on_message(filters.private & filters.command('restart') & filters.user(ADMINS))
-async def restarter(app, message):
- await message.reply_text("Restarting... ♻️")
-            
-        else:
-            await message.reply_text("Hey Mr, Don't try to abuse me.")
+
 
     
-
 #=====================================================================================##
 
 WAIT_MSG = """"<b>Processing ....</b>"""
