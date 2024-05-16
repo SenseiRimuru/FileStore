@@ -100,8 +100,23 @@ async def start_command(client: Client, message: Message):
             disable_web_page_preview = True,
             quote = True
         )
-        return   
+        return  
 
+@Bot.on_message(filters.private & filters.command('restart') & filters.user(ADMINS))
+async def restarter(app, message):
+ await message.reply_text("Restarting... ♻️")
+            quit(1)
+        else:
+            await message.reply_text("Hey Mr, Don't try to abuse me.")
+
+@Bot.on_message(filters.private & filters.command('log') & filters.user(ADMINS))
+async def help_message(app, message):
+        await upload_log_file(app, message)
+ await message.reply_text("Uploading")
+            quit(1)
+        else:
+            await message.reply_text("Hey Mr, Don't try to abuse me.")
+    
 
 #=====================================================================================##
 
